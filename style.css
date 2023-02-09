@@ -1,0 +1,51 @@
+
+#couleurfond{
+   background-color:#222831;
+    height: 12vh;
+    background-size: cover;
+    color:white;
+    
+}
+h1,h6{
+    text-align: center;
+}
+.decalerImages{
+    padding-top: 1%;
+}
+.espacementitem{
+        margin-top:2% ;
+}
+
+#rapprochement1/*Permet de centrer le footer*/
+{
+    padding-left: 30%;
+   
+}
+#rapprochement2{/*Permet de centrer le footer*/
+    
+    padding-right: 30%;
+}
+
+
+@media only screen and (max-width:950px){
+    section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .espacementitem{
+        margin-top: 5%;
+    }
+    #rapprochement1{
+        margin-right:15px;
+    }
+    #rapprochement2{
+        margin-left: 15px;
+    }
+    
+}
+ul,li{
+    padding-right: 30%;
+    padding-left: 30%;
+}
+
