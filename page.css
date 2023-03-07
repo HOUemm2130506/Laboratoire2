@@ -26,7 +26,6 @@ select, input {
     width: 10em;
   }
 }
-
 /***Page blog**/
 textarea {
   width: 100%;
@@ -55,7 +54,6 @@ textarea {
     width: 80px;
   }
 }
-
 @media only screen and (min-width: 700px) {
   .centrergrandeimg {
     display: block;
@@ -63,8 +61,6 @@ textarea {
     margin-right: auto;
   }
 }
-
 .decalericone {
   margin-top: 2%;
-}
-/*# sourceMappingURL=page.css.map */
+}/*# sourceMappingURL=page.css.map */

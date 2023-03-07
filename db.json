@@ -1,0 +1,70 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "titre": "Microbrasserie",
+      "auteur": "Koffi Emmanuel",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
+      "image": "images/Images1.jpg",
+      "date": "22 Juin 2022"
+    },
+    {
+      "id": 2,
+      "titre": "Restaurant",
+      "auteur": "Bastien Maniankiry",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
+      "image": "images/Images2.jpg",
+      "date": "29 Decembre 2017"
+    },
+    {
+      "id": 3,
+      "titre": "Marketing Digital",
+      "auteur": "Benjamin Boulet",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
+      "image": "images/Images3.jpg",
+      "date": "01 Mars 2010"
+    },
+    {
+      "id": 4,
+      "titre": "L'équilibre financiere",
+      "auteur": "Koffi Emmanuel",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
+      "image": "images/Images4.jpg",
+      "date": "07 Avril 2015"
+    },
+    {
+      "id": 5,
+      "titre": "Mode écologique",
+      "auteur": "Koffi Emmanuel",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
+      "image": "images/Images5.jpg",
+      "date": "18 Juin 2020"
+    }
+  ],
+  "commentaires": [
+    {
+      "id": "pub-1",
+      "nompublication": "Microbrasserie",
+      "datePublication": "16/02/2022",
+      "contenupub": "commentaires"
+    },
+    {
+      "id": "pub-2",
+      "nompublication": "Microbrasserie",
+      "datePublication": "16/02/2022",
+      "contenupub": "commentaires"
+    },
+    {
+      "id": "pub-3",
+      "nompublication": "Microbrasserie",
+      "datePublication": "16/02/2022",
+      "contenupub": "commentaires"
+    },
+    {
+      "id": "pub-4",
+      "nompublication": "Microbrasserie",
+      "datePublication": "16/02/2022",
+      "contenupub": "commentaires"
+    }
+  ]
+}
