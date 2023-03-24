@@ -47,55 +47,44 @@
                     
             </div>
         <figure class="espacementelement">
-            <img src="/images/jus.jpg" class="img-fluid  rounded rounded-4 centrergrandeimg " >
+            <img src="/images/jus.jpg" id="imgprincipale" class="img-fluid  rounded rounded-4 centrergrandeimg " >
         </figure>
                 <div>
                     <div>
-                        <h2 class="text-center">Titre du blog</h2>
+                        <h2 class="text-center" id="titreBlog">Titre du blog</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio est accusantium vitae aut adipisci. Aspernatur laboriosam nostrum ex saepe maiores commodi qui, voluptas sunt deserunt excepturi, est mollitia. Atque, fugiat.</p>
                     </div>
                     <div>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eum dicta eius veniam quos tempore nobis ut officiis sapiente labore debitis ab architecto, magni hic rem, consequatur officia, tenetur</p>
                         <caption>
-                            <img src="/images/restaurant.jpg" alt="restaurant"class="img-fluid rounded rounded-4 centrergrandeimg">
+                            <img  id="imgdetail"src="/images/restaurant.jpg" alt="restaurant"class="img-fluid rounded rounded-4 centrergrandeimg">
                         </caption>
-                        <div>
+                        <form id="form">
                             <label>Commentaires</label>
-                            <textarea></textarea>
+                            <textarea id="textarea"></textarea>
                             <div class="d-flex justify-content-end">
-                                <button type="submit" content="button">Submit</button>
+                                <button type="submit" id="Envoyer">Submit</button>
                             </div>
-                           
-                        </div>   
+                        </form>                       
                     </div>
-                    <div class="row espacementelement">
-                         <div class="col-xs-3 col-3">
-                            <img src="/images/chefentreprise.jpg" alt="chefentreprise" class="dezoomer">
-                         </div>
-                         <div class="col-xs-9 col-9">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint nisi alias, nostrum atque neque maxime vitae veniam, consequatur dolor quam minima vel iure magnam molestiae saepe consectetur laudantium modi. Praesentium.</p>
-                            <div class="col-12 col-12">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam iste deleniti unde? Explicabo eligendi velit similique consequuntur corporis labore minima iure libero animi, mollitia, ullam ut deleniti quas delectus?</p>
+                    <!-- Commentaires inséres par defaut -->
+                    <div id="commentaires">
+                        <div class="media">
+                            <img class="mr-3 " src="/images/chefentreprise.jpg" alt="image" style="width: 60px;">
+                            <div class="media-body">
+                             <p id="contenupub">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> 
                             </div>
-                      
-                         </div>
-                        
-                    </div>
-                    <div class="row espacementelement container-fluid">
-                        <div class="col-xs-4 col-5">
-                            <img src="/images/chefentreprise.jpg" class="deplacerimg dezoomer espacementelement">
+                          </div>
+                         <div class="media">
+                            <img class="mr-3 " src="/images/chefentreprise.jpg" alt="image" style="width: 60px;">
+                            <div class="media-body">
+                             <p >Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> 
+                            </div>
+                          </div>     
                         </div>
-                        <div class="col-xs-7 col-7">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, assumenda harum tenetur, atque aperiam asperiores autem amet velit ducimus impedit sequi perspiciatis eligendi eaque magnam veritatis illum, fugit obcaecati quasi!</p>
-                            <div class="col-sm-12 container-fluid">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quia iure esse iste reiciendis quasi doloribus enim id vel quod, aliquam blanditiis molestiae accusamus repellat commodi ducimus aperiam officia excepturi?</p>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, ab! Quibusdam ducimus, quae non impedit obcaecati rerum corporis, libero nesciunt ut culpa doloribus quo fuga! Ea nesciunt voluptas vero impedit!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat numquam ratione aliquam nam! Dolor delectus aliquam totam cupiditate asperiores saepe repudiandae illo aut. Qui fuga voluptatibus saepe provident suscipit porro?</p>
-                            </div>
-                        </div>
-                        
-                     
+
                     </div>
+                    
                 </div>
     </div>
     
@@ -112,8 +101,13 @@
             </figure> 
         </div>
         <h6>Centre d'Expertise et de Perfectionnement en Informatique</h6>
-        <h6>2022</h6>
+        <h6 id="datepub">2022</h6>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script src="indexBlog.js"></script>
 </body>
 </html>

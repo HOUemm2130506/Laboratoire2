@@ -4,11 +4,11 @@ fetch('http://localhost:3000/blogs')
 .then(data=>{
       let select=document.querySelector("#contenu");
       let out="";
-      for(var i=0;i<data.length;i++)
+      for(let i=0;i<data.length;i++)
       {
             out+=` <article class="col-lg-4 col-12 border publication border-2"­­>
             <div class="card card-header">
-                  <a href="pageBlog.html"><img src="${data[i].image}"  class=" container imagecard  decalerImages rounded-4" alt="Images1"></a>
+                  <img src="${data[i].image}" id="${data[i].id}" class=" container imagecard  decalerImages rounded-4"  onclick="ClicSurImage(${data[i].id})">
                   </div> 
              <div class="card card-body bg-body-secondary">
                   <h3 class="card card-title text-sm-center">${data[i].titre}</h3> 
@@ -22,10 +22,11 @@ fetch('http://localhost:3000/blogs')
 }
 )
 const formulaire = document.querySelector('#myform');
-function Ajouterpublication()
+formulaire.addEventListener('submit',AjouterPublication)
+function AjouterPublication(e)
 {
-      
-
+      e.preventDefault();//Empecher le recharegement du formulaire
+     
 
 // Créer un objet vide pour stocker les données du formulaire
 const donneesFormulaire = {};
@@ -39,12 +40,6 @@ for (let champ of formulaire.elements) {
       donneesFormulaire[champ.name] = champ.value;
     }
   }
-
-
-// Maintenant, vous pouvez accéder à toutes les données du formulaire en utilisant l'objet donneesFormulaire
-
-
-
       // récupère les valeurs des champs de formulaire
   let auteur = document.querySelector('#auteur').value;
   let titre = document.querySelector('#titre').value;
@@ -66,15 +61,51 @@ for (let champ of formulaire.elements) {
    })
    .then(response => response.json())
    .then(data => {
-     alert("succes");
+     //alert("succes");
    })
    .catch(error => {
      console.error('Error:', error);
-     // affiche un message d'erreur à l'utilisateur
-     alert('Il y a eu une erreur lors de la soumission des données.');
+    
+     //alert('Il y a eu une erreur lors de la soumission des données.');
    });
 
 }
+//Chargement du titre et des differents éléments de la page  et des commentaires 
+function ClicSurImage(imageid)
+{ 
+  let datepub,contenupub;
+  let lienImage="";
+  let imagesecondaire;
+  let titre="";
+  fetch('http://localhost:3000/blogs?id='+imageid)
+  .then(response => response.json())
+  .then(data=>{
+          for( let i=0;i<data.length;i++)
+          {
+            if(data[i]!=null)
+            {
+              lienImage=data[i].image; 
+              titre=data[i].titre;
+              imagesecondaire=data[i].imagesecondaire;
+
+            }
+
+          }
+      })
+  .then(fetch('http://localhost:3000/commentaires?idcommentairepub='+imageid)//correction Laboratoire 2 
+  .then(response => response.json())
+  .then(rep=>{
+          for( let j=0;j<rep.length;j++)
+          {
+             datepub=rep[j].datePublication;
+              contenupub=rep[j].contenupub; 
+          }
+          window.location.href='http://127.0.0.1:5501/pageBlog.html?id='+imageid+'&titre='+titre+'&image='+lienImage+'&imagesecondaire='+imagesecondaire+'&datePublication='+datepub+'&contenupub='+contenupub; //CorrectionLaboratoire 2          
+      }
+      ))
+         
+              
+     
+}
+
   
-
-

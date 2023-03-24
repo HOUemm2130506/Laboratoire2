@@ -1,0 +1,9 @@
+-Le clic sur l'image ne fonctionne pas avec Jquery
+		-Trouver des pistes de solutions pour régler le problème 
+
+-Faire un clic sur l'image d'une publication doit me permettre de faire une requete Get  pour récupérer des données
+relatifs au post
+	cela me permettra ainsi de faire les modifications en fonction du titre et de l'image de la page Blog
+
+
+-Comment faire cettev transition entre les deux pages ??

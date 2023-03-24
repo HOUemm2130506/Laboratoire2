@@ -6,6 +6,7 @@
       "auteur": "Koffi Emmanuel",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
       "image": "images/Images1.jpg",
+      "imagesecondaire": "images/microbrasserie.jpg",
       "date": "22 Juin 2022"
     },
     {
@@ -14,6 +15,7 @@
       "auteur": "Bastien Maniankiry",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
       "image": "images/Images2.jpg",
+      "imagesecondaire": "images/Restaurantdetails.jpg",
       "date": "29 Decembre 2017"
     },
     {
@@ -22,6 +24,7 @@
       "auteur": "Benjamin Boulet",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
       "image": "images/Images3.jpg",
+      "imagesecondaire": "images/marketing.jpg",
       "date": "01 Mars 2010"
     },
     {
@@ -30,6 +33,7 @@
       "auteur": "Koffi Emmanuel",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
       "image": "images/Images4.jpg",
+      "imagesecondaire": "images/marketing.jpg",
       "date": "07 Avril 2015"
     },
     {
@@ -38,32 +42,44 @@
       "auteur": "Koffi Emmanuel",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt blanditiis dolore ea, neque vel assumenda expedita reiciendis maxime veniam dolor voluptas officia, exercitationem quam rerum. Hic asperiores suscipit nobis est.",
       "image": "images/Images5.jpg",
+      "imagesecondaire": "images/mode.jpg",
       "date": "18 Juin 2020"
     }
   ],
   "commentaires": [
     {
-      "id": "pub-1",
+      "id": 1,
       "nompublication": "Microbrasserie",
       "datePublication": "16/02/2022",
+      "idcommentairepub": "1",
+      "contenupub": "commentaires LOrem ipsum ...(Microbrasserie"
+    },
+    {
+      "id": 2,
+      "nompublication": "Microbrasserie",
+      "datePublication": "31/08/2022",
+      "idcommentairepub": "2",
+      "contenupub": "commentaires Lorem ipsum ...(Restaurant)"
+    },
+    {
+      "id": 3,
+      "nompublication": "Microbrasserie",
+      "datePublication": "31/12/2022",
+      "idcommentairepub": "3",
+      "contenupub": "commentaires Lorem ipsum ...(Marketing digital)"
+    },
+    {
+      "id": 4,
+      "nompublication": "Microbrasserie",
+      "datePublication": "01/05/2021",
+      "idcommentairepub": "4",
       "contenupub": "commentaires"
     },
     {
-      "id": "pub-2",
-      "nompublication": "Microbrasserie",
-      "datePublication": "16/02/2022",
-      "contenupub": "commentaires"
-    },
-    {
-      "id": "pub-3",
-      "nompublication": "Microbrasserie",
-      "datePublication": "16/02/2022",
-      "contenupub": "commentaires"
-    },
-    {
-      "id": "pub-4",
-      "nompublication": "Microbrasserie",
-      "datePublication": "16/02/2022",
+      "id": 5,
+      "nompublication": "Mode ecologique",
+      "datePublication": "12/09/2022",
+      "idcommentairepub": "5",
       "contenupub": "commentaires"
     }
   ]
